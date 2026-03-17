@@ -8,8 +8,8 @@ A production-quality frontend for a real-time collaborative document editor, bui
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/YOUR_USERNAME/cowrite.git
-cd cowrite
+git clone https://github.com/YOUR_USERNAME/doceditor.git
+cd doceditor
 npm install
 
 # 2. Start development server
