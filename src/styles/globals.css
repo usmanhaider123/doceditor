@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-bg-base text-text-primary font-sans;
+  }
+  button { @apply cursor-pointer; }
+  textarea { resize: none; }
+  :focus-visible {
+    @apply outline outline-2 outline-accent outline-offset-2;
+  }
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #ffffff28; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #5a5a70; }
+
+/* Select option theming */
+select option { background-color: #1e1e26; color: #e8e8f0; }
